@@ -1,0 +1,16 @@
+PH13286 OPTION TO DISABLE ONE PHASE COMMIT OPTIMIZATION
+PH24154 security vulnerability in openidConnectServer-1.0
+PH24366 LIBERTY FAILS TO REMOVE THE CLIENT ADDRESS SPACE LEVEL RESMGRS WHEN CLEANING UP LIBERTY'S CLIENT STRUCTURES
+OLGH11475 CWWKG0090E seen when using include that worked in previous version
+OLGH11550 SSL Channel: double release of WsByteBuffer race condition
+OLGH11582 NPE in OpentracingUtils.lookupAppName()
+OLGH11590 MetricProducer provides a simple timer and concurrent gauge with the wrong MetricType
+OLGH11595 SAML SP should use 401 instead of 403 when redirects user to IdP
+OLGH11682 Social login feature cookies may not use dynamically updated web app security config
+OLGH11696 Exception during UserTransaction thwarts @Fallback on @Asynchronous method
+OLGH11746 Unable to create logger error in server startWinService when WLP_OUTPUT_DIR set in server.env
+OLGH11750 Correct redirect location.
+OLGH11755 Update Weld3 to 3.1.4
+OLGH11767 Lock contention acquiring applicationTracersLock in OpentracingTracerManager.ensureTracer()
+OLGH11785 intermittent h2 timing test failure
+OLGH11870 H2 NPE check modification

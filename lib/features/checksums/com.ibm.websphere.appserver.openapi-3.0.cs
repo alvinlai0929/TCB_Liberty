@@ -1,0 +1,23 @@
+#Tue Aug 04 15:53:08 CST 2020
+lib/com.ibm.ws.io.swagger.parser_1.0.40.jar=aec90433d200bcb65388ca4b09048aa5
+lib/com.ibm.ws.openapi.ui_1.0.40.jar=1b8a3db011d8121ce04637a2a6411089
+lib/com.ibm.ws.io.swagger.core_1.0.40.jar=e64c9ea1b1a7abe8994e6b7b24593cf0
+dev/api/third-party/com.ibm.websphere.appserver.thirdparty.openapi.integration_1.0.40.jar=ace4aa5b8372ad3798dfa0704b3f2ac0
+lib/com.ibm.ws.openapi.public_1.0.40.jar=85655c4777f9ec83885d04160cb344a4
+lib/com.ibm.ws.openapi.parser_1.0.40.jar=b1a4f821cfab5c6806315ce75ca89d76
+lib/com.ibm.ws.org.apache.commons.lang3_1.0.40.jar=18d2c937f54ba88071e750441f4119f9
+dev/spi/ibm/javadoc/com.ibm.websphere.appserver.spi.openapi_1.0-javadoc.zip=d15aee025d35aa75cb97754968b04464
+dev/spi/ibm/com.ibm.websphere.appserver.spi.openapi_1.0.40.jar=6affcca7854f101ccdd883581a2dcab1
+lib/com.ibm.websphere.openapi_1.0.40.jar=8acd89e6d6eac0ab977109fa48859bc4
+lib/com.ibm.ws.com.fasterxml.jackson.2.9.1_1.0.40.jar=85d5b14b7e7f96849842564a4a3627a1
+lib/com.ibm.ws.org.apache.commons.io_1.0.40.jar=df0d92cd90c9db28f92a708535aad593
+lib/com.ibm.ws.openapi.core_1.0.40.jar=acd9f158566eb86f55940bc747d5c794
+lib/com.ibm.ws.openapi_1.0.40.jar=b13587aaf4e15af63ceb0d107e05acf3
+lib/com.ibm.ws.io.swagger.models_1.0.40.jar=0bf44ee80e16c67469c0a2c0375760aa
+lib/features/com.ibm.websphere.appserver.openapi-3.0.mf=dec25d8264885826295d1570c31db9c2
+dev/api/third-party/com.ibm.websphere.appserver.thirdparty.openapi.models_1.0.40.jar=42568e8d9dc98d8df63703b2d2049cff
+lib/com.ibm.ws.require.java8_1.0.40.jar=b10c425d38de9514d013a9530c31f7f2
+dev/api/third-party/com.ibm.websphere.appserver.thirdparty.swagger.annotations_1.1.40.jar=816cfed1e84bac2b778ae38137dad297
+lib/com.ibm.ws.openapi.ui.private_1.0.40.jar=48daf7095e417bea80931794f95e4b7b
+lib/com.ibm.ws.openapi.private_1.0.40.jar=f53535536af44ae9ccaa96b1c8f196a8
+dev/api/third-party/com.ibm.websphere.appserver.thirdparty.openapi.annotations_1.0.40.jar=d51823bc544b7a10375e45195dbd3e6b

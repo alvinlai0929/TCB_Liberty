@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoftwareIdentity name="WebSphere Application Server Liberty Core" patch="true" tagId="ibm.com-f6cc0cd5c6b846a7b33538f2ae21a8ba-20.0.0.5" version="20.0.0.5" versionScheme="multipartnumeric" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.iso.org/iso/19770/-2/2015-current/schema.xsd schema.xsd">
+    <Meta persistentId="f6cc0cd5c6b846a7b33538f2ae21a8ba"/>
+    <Meta generator="4-1-20170201"/>
+    <Meta revision="20.0.0.5"/>
+    <Meta build_date="cl200520200429-1655"/>
+    <Link href="swid:ibm.com-f6cc0cd5c6b846a7b33538f2ae21a8ba-20.0.0" rel="ancestor"/>
+    <Entity name="IBM" regid="ibm.com" role="licensor tagCreator softwareCreator"/>
+</SoftwareIdentity>

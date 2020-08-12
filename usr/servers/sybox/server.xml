@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="sybox">
+
+    <!-- Enable features -->
+    <featureManager>
+        <feature>jsp-2.3</feature>
+		<feature>adminCenter-1.0</feature>
+		<feature>transportSecurity-1.0</feature>
+    </featureManager>
+	
+	
+	
+	<keyStore type="PKCS12" password="1qaz@WSX" id="defaultKeyStore" location="D:/IBM/WebSphere/Liberty/usr/servers/sybox/resources/security/plugin-key.p12"> </keyStore>
+        
+	<ssl id="defaultSSLConfig" enabledCiphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA256 " sslProtocol="TLSv1.2" keyStoreRef="defaultKeyStore" />
+	
+	
+	<!-- Basic Auth -->
+	<basicRegistry id="basic" realm="BasicRealm">
+		<user name="admin" id="admin" password="admin" />
+	</basicRegistry>
+	<administrator-role>
+		<user>admin</user>
+	</administrator-role>
+	<remoteFileAccess>
+		<writeDir>${server.config.dir}</writeDir>
+	</remoteFileAccess>
+	<!-- Plugin Setting -->
+	<pluginConfiguration pluginInstallRoot="D:/IBM/WebSphere/Plugins" />
+
+	<!-- SQL Server Setting -->
+	<!--	<dataSource id="DefaultDataSource" jndiName="jdbc/mssqlserver"> 
+				<jdbcDriver libraryRef="MSJDBCLib"/>
+				<properties.microsoft.sqlserver databaseName="SAMPLE" serverName="localhost" portNumber="1433" user="sa" password="1qaz@WSX"/>
+			</dataSource>
+			
+			<library id="MSJDBCLib">
+					<file name="D:/IBM/Liberty/usr/servers/server1/resources/MSSQL/mssql-jdbc-8.2.2.jre8.jar"/>
+			</library> -->
+
+
+	
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint id="defaultHttpEndpoint" httpsPort="9443" httpPort="9080" />
+
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true" />
+   <applicationMonitor pollingRate="500ms" />
+   <monitor enableTraditionalPMI="true" />
+ </server>
