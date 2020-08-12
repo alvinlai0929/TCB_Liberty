@@ -35,7 +35,7 @@
 			</dataSource>
 			
 			<library id="MSJDBCLib">
-					<file name="D:/IBM/Liberty/usr/servers/server1/resources/MSSQL/mssql-jdbc-8.2.2.jre8.jar"/>
+					<file name="${server.output.dir}/resources/mssql-jdbc-8.2.2.jre8.jar"/>
 			</library> -->
 
 
