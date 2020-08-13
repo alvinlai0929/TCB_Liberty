@@ -17,7 +17,7 @@
 	
 	<!-- Basic Auth -->
 	<basicRegistry id="basic" realm="BasicRealm">
-		<user name="admin" id="admin" password="admin" />
+		<user name="admin" id="admin" password="{xor}PjsyNjE=" />
 	</basicRegistry>
 	<administrator-role>
 		<user>admin</user>
