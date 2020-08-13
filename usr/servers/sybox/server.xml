@@ -6,6 +6,8 @@
         <feature>jsp-2.3</feature>
 		<feature>adminCenter-1.0</feature>
 		<feature>transportSecurity-1.0</feature>
+		<feature>jdbc-4.2</feature>
+		<feature>restConnector-2.0</feature>
     </featureManager>
 	
 	
@@ -28,15 +30,15 @@
 	<!-- Plugin Setting -->
 	<pluginConfiguration pluginInstallRoot="D:/IBM/WebSphere/Plugins" />
 
-	<!-- SQL Server Setting -->
-	<!--	<dataSource id="DefaultDataSource" jndiName="jdbc/mssqlserver"> 
+	<!-- SQL Server Setting --> <!--測試 https://localhost:9443/ibm/api/validation/dataSource/ -->
+	<dataSource id="DefaultDataSource" jndiName="jdbc/mssqlserver"> 
 				<jdbcDriver libraryRef="MSJDBCLib"/>
 				<properties.microsoft.sqlserver databaseName="SAMPLE" serverName="localhost" portNumber="1433" user="sa" password="1qaz@WSX"/>
 			</dataSource>
 			
 			<library id="MSJDBCLib">
 					<file name="${server.output.dir}/resources/mssql-jdbc-8.2.2.jre8.jar"/>
-			</library> -->
+			</library> 
 
 
 	
