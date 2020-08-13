@@ -10,7 +10,7 @@
 	
 	
 	
-	<keyStore type="PKCS12" password="1qaz@WSX" id="defaultKeyStore" location="D:/IBM/WebSphere/Liberty/usr/servers/sybox/resources/security/plugin-key.p12"> </keyStore>
+	<keyStore type="PKCS12" id="defaultKeyStore" location="D:/IBM/WebSphere/Liberty/usr/servers/sybox/resources/security/plugin-key.p12" password="1qaz@WSX"> </keyStore>
         
 	<ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2" enabledCiphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA256 " />
 	
