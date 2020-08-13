@@ -12,7 +12,7 @@
 	
 	<keyStore type="PKCS12" password="1qaz@WSX" id="defaultKeyStore" location="D:/IBM/WebSphere/Liberty/usr/servers/sybox/resources/security/plugin-key.p12"> </keyStore>
         
-	<ssl id="defaultSSLConfig" enabledCiphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA256 " sslProtocol="TLSv1.2" keyStoreRef="defaultKeyStore" />
+	<ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2" enabledCiphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA256 " />
 	
 	
 	<!-- Basic Auth -->
@@ -41,7 +41,7 @@
 
 	
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
-    <httpEndpoint id="defaultHttpEndpoint" httpsPort="9443" httpPort="9080" />
+    <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443" />
 
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" />
