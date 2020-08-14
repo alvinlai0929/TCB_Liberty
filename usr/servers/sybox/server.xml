@@ -12,9 +12,9 @@
 	
 	
 	
-	<keyStore type="PKCS12" id="defaultKeyStore" location="${server.output.dir}/resources/security/plugin-key.p12" password="{xor}bi4+JR8IDAc="> </keyStore>
+	<keyStore type="PKCS12" id="defaultKeyStore" password="{xor}bi4+JR8IDAc=" location="${server.output.dir}/resources/security/plugin-key.p12"> </keyStore>
         
-	<ssl id="defaultSSLConfig" keyStoreRef="defaultKeyStore" sslProtocol="TLSv1.2" enabledCiphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA256 " />
+	<ssl id="defaultSSLConfig" enabledCiphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_128_CBC_SHA256 TLS_RSA_WITH_AES_256_CBC_SHA256 " sslProtocol="TLSv1.2" keyStoreRef="defaultKeyStore" />
 	
 	
 	<!-- Basic Auth -->
@@ -32,18 +32,18 @@
 
 	<!-- SQL Server Setting --> <!--測試 https://localhost:9443/ibm/api/validation/dataSource/ -->
 	<dataSource id="DefaultDataSource" jndiName="jdbc/mssqlserver"> 
-				<jdbcDriver libraryRef="MSJDBCLib"/>
-				<properties.microsoft.sqlserver databaseName="SAMPLE" serverName="localhost" portNumber="1433" user="sa" password="1qaz@WSX"/>
+				<jdbcDriver libraryRef="MSJDBCLib" />
+				<properties.microsoft.sqlserver password="1qaz@WSX" user="sa" portNumber="1433" serverName="localhost" databaseName="SAMPLE" />
 			</dataSource>
 			
 			<library id="MSJDBCLib">
-					<file name="${server.output.dir}/resources/mssql-jdbc-8.2.2.jre8.jar"/>
+					<file name="${server.output.dir}/resources/mssql-jdbc-8.2.2.jre8.jar" />
 			</library> 
 
 
 	
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
-    <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443" />
+    <httpEndpoint id="defaultHttpEndpoint" httpsPort="9443" httpPort="9080" />
 
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="true" />
